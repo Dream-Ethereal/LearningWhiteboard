@@ -1,0 +1,5 @@
+// 设置背景色为白色
+    QPalette palette = this->palette();
+    palette.setColor(QPalette::Background, Qt::white);
+    this->setAutoFillBackground(true);
+    this->setPalette(palette);
