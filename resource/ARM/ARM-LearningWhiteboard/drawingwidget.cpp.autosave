@@ -10,14 +10,17 @@ DrawingWidget::DrawingWidget(QWidget *parent) : QWidget(parent) {
     this->setPalette(palette);
 }
 
+//设置画笔颜色
 void DrawingWidget::setPenColor(const QColor &color) {
     penColor = color;
 }
 
+//设置画笔粗细
 void DrawingWidget::setPenWidth(int width) {
     penWidth = width;
 }
 
+//鼠标按下事件
 void DrawingWidget::mousePressEvent(QMouseEvent *event) {
     if (event->button() == Qt::LeftButton) {
         lastPoint = event->pos();
@@ -25,6 +28,7 @@ void DrawingWidget::mousePressEvent(QMouseEvent *event) {
     }
 }
 
+//鼠标移动事件
 void DrawingWidget::mouseMoveEvent(QMouseEvent *event) {
     if (drawing && (event->buttons() & Qt::LeftButton)) {
         lines.append({QLine(lastPoint, event->pos()), penColor, penWidth});
@@ -33,6 +37,7 @@ void DrawingWidget::mouseMoveEvent(QMouseEvent *event) {
     }
 }
 
+//鼠标释放事件
 void DrawingWidget::mouseReleaseEvent(QMouseEvent *event) {
     if (event->button() == Qt::LeftButton && drawing) {
         lines.append({QLine(lastPoint, event->pos()), penColor, penWidth});
@@ -41,6 +46,7 @@ void DrawingWidget::mouseReleaseEvent(QMouseEvent *event) {
     }
 }
 
+//绘画
 void DrawingWidget::paintEvent(QPaintEvent *event) {
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing);

@@ -8,6 +8,5 @@
         <file>icon/pen_checked_70x70.png</file>
         <file>icon/pen_release_70x70.png</file>
         <file>icon/tool_bar.png</file>
-        <file>icon/color.png</file>
     </qresource>
 </RCC>

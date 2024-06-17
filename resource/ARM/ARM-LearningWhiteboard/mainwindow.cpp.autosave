@@ -62,12 +62,14 @@ void MainWindow::on_tools_clicked()
 {
     if(!tools_status)
     {
+        //展开工具栏
         tools_status = !tools_status;
         tool_bg->setVisible(true);
         pen->setVisible(true);
         eraser->setVisible(true);
     }else
     {
+        //收回工具栏
         tools_status = !tools_status;
         tool_bg->setVisible(false);
         pen->setVisible(false);
@@ -83,7 +85,8 @@ void MainWindow::pen_clicked()
     eraser->setStyleSheet(QString::fromUtf8("QPushButton#eraser{background-image: url(:/icon/icon/eraser_release_70x70.png);background-color: transparent;}"));
     pen->setEnabled(false);
     eraser->setEnabled(true);
-
+    
+    //调整画笔，黑色，粗细2
     drawingWidget->setPenColor(Qt::black);
     drawingWidget->setPenWidth(2);
 }
@@ -96,6 +99,7 @@ void MainWindow::eraser_clicked()
     pen->setEnabled(true);
     eraser->setEnabled(false);
 
+    //调整画笔，背景色，粗细20,充当橡皮擦
     drawingWidget->setPenColor(Qt::white);
     drawingWidget->setPenWidth(20);
 //    QColor color = QColorDialog::getColor(Qt::black, this, "Choose Pen Color");
