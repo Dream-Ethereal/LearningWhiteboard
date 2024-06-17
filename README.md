@@ -1,4 +1,4 @@
-# ![logo_100x100](.\icon\logo_100x100.png)Learning Whiteboard
+# ![logo_100x100](./icon/logo_100x100.png)Learning Whiteboard
 
 Author : Ethereal
 
@@ -12,5 +12,6 @@ Introduction : 这是一个基于Linux的学习白板，具有手持终端、投
 
 2024.6.16：完成了白板的基础功能，包括绘画、擦除。制作了Learning Whiteboard的Logo~，简易小制作，凑合看吧~展示效果：
 
-![](.\images\image-20240616214354552.png)
+![](./images/image-20240616214354552.png)
 
+2024.6.17：添加了调色版功能，添加了生成形状和函数图像的功能，有待完善框选区域并进行移动功能。大幅减缓项目的更新速度，希望我能找到一个实习。

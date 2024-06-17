@@ -664,6 +664,7 @@ qrc_res.cpp: ../ARM-LearningWhiteboard/res.qrc \
 		../ARM-LearningWhiteboard/icon/pen_checked_70x70.png \
 		../ARM-LearningWhiteboard/icon/tool_70x70.png \
 		../ARM-LearningWhiteboard/icon/pen_release_70x70.png \
+		../ARM-LearningWhiteboard/icon/color.png \
 		../ARM-LearningWhiteboard/icon/tool_bar.png \
 		../ARM-LearningWhiteboard/icon/logo_200x200.png \
 		../ARM-LearningWhiteboard/icon/eraser_checked_70x70.png \
@@ -917,6 +918,9 @@ moc_mainwindow.cpp: ../ARM-LearningWhiteboard/mainwindow.h \
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/QPushButton \
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qpushbutton.h \
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/QColorDialog \
+		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qcolordialog.h \
+		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qdialog.h \
 		moc_predefs.h \
 		/opt/Qt5.12.9/5.12.9/gcc_64/bin/moc
 	/opt/Qt5.12.9/5.12.9/gcc_64/bin/moc $(DEFINES) --include /home/ethereal/LearningWhiteboard/build-ARM-LearningWhiteboard-Desktop_Qt_5_12_9_GCC_64bit-Debug/moc_predefs.h -I/opt/Qt5.12.9/5.12.9/gcc_64/mkspecs/linux-g++ -I/home/ethereal/LearningWhiteboard/ARM-LearningWhiteboard -I/opt/Qt5.12.9/5.12.9/gcc_64/include -I/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets -I/opt/Qt5.12.9/5.12.9/gcc_64/include/QtGui -I/opt/Qt5.12.9/5.12.9/gcc_64/include/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../ARM-LearningWhiteboard/mainwindow.h -o moc_mainwindow.cpp
@@ -1177,6 +1181,9 @@ main.o: ../ARM-LearningWhiteboard/main.cpp ../ARM-LearningWhiteboard/mainwindow.
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/QPushButton \
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qpushbutton.h \
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/QColorDialog \
+		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qcolordialog.h \
+		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/QApplication \
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtCore/qcoreapplication.h \
@@ -1308,6 +1315,9 @@ mainwindow.o: ../ARM-LearningWhiteboard/mainwindow.cpp ../ARM-LearningWhiteboard
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/QPushButton \
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qpushbutton.h \
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/QColorDialog \
+		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qcolordialog.h \
+		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtWidgets/qdialog.h \
 		ui_mainwindow.h \
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtCore/QVariant \
 		/opt/Qt5.12.9/5.12.9/gcc_64/include/QtGui/QIcon \
